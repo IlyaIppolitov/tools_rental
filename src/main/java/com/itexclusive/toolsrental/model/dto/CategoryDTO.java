@@ -1,4 +1,4 @@
-package com.itexclusive.toolsrental.model.entities.DTO;
+package com.itexclusive.toolsrental.model.dto;
 
 import lombok.Builder;
 import lombok.Data;

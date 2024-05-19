@@ -26,4 +26,6 @@ public class Item {
     private Category category;
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<User> userList;
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private Set<Cart> cartList;
 }

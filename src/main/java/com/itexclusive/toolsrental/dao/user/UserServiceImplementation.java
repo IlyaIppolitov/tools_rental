@@ -1,8 +1,8 @@
 package com.itexclusive.toolsrental.dao.user;
 
-import com.itexclusive.toolsrental.security.dao.UserRepository;
-import com.itexclusive.toolsrental.security.entity.Role;
-import com.itexclusive.toolsrental.security.entity.User;
+import com.itexclusive.toolsrental.model.repositories.UserRepository;
+import com.itexclusive.toolsrental.model.entities.Role;
+import com.itexclusive.toolsrental.model.entities.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

@@ -25,5 +25,5 @@ public class Item {
     @JoinColumn(name = "category_id", nullable = false)
     private Category category;
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private Set<Customer> customerList;
+    private Set<User> userList;
 }

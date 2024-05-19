@@ -1,4 +1,4 @@
-package com.itexclusive.toolsrental.security.entity;
+package com.itexclusive.toolsrental.model.entities;
 
 public enum Role {
     ROLE_ADMIN,

@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Categories</title>
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
 
+<header>
+    <h1>My Website</h1>
+    <div class="header-buttons">
+        <a href="/categories">Categories</a>
+        <a href="/login">login</a>
+        <a href="/logout">logout</a>
+        <a href="/register">register</a>
+        <a href="/profile">profile</a>
+    </div>
+</header>
+
+
+<div class="grid">
+    <div class="category" th:each="category: ${categories}">
+        <img src="https://via.placeholder.com/150" alt="Category">
+        <p>[[${category.name}]]</p>
+    </div>
+</div>
 </body>
 </html>

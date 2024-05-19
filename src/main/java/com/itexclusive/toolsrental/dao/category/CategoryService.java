@@ -1,4 +1,7 @@
 package com.itexclusive.toolsrental.dao.category;
 
-public interface CategoryService {
+import com.itexclusive.toolsrental.dao.DAO;
+import com.itexclusive.toolsrental.model.entities.Category;
+
+public interface CategoryService extends DAO<Category> {
 }

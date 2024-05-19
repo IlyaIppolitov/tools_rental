@@ -1,6 +1,6 @@
-package com.itexclusive.toolsrental.security.dao;
+package com.itexclusive.toolsrental.model.repositories;
 
-import com.itexclusive.toolsrental.security.entity.User;
+import com.itexclusive.toolsrental.model.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import org.springframework.stereotype.Repository;

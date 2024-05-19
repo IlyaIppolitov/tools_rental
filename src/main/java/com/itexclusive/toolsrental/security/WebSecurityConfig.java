@@ -26,11 +26,11 @@ public class WebSecurityConfig{
         http
             .csrf(AbstractHttpConfigurer::disable) // Отключаем CSRF для простоты
             .authorizeHttpRequests(authorize -> authorize
-                .requestMatchers("/").permitAll()
+                .requestMatchers("/", "/error").permitAll()
                 // Определение страниц доступных анонимам
                 .requestMatchers("/register", "/login").anonymous()
                 // Определение страниц доступных вошедшим
-                .requestMatchers("/logout", "/profile").authenticated()
+                .requestMatchers("/logout", "/profile", "/categories").authenticated()
                 // Везде можно ходить админу и тестировщику
                 .requestMatchers("/**").hasAnyRole("ADMIN", "TEST")
                 // Все остальные запросы доступны только с антентификацией

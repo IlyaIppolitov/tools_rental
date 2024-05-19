@@ -1,18 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>HOME</title>
-    <link rel="stylesheet" href="../static/styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
-<div class="container">
-    <div class="modal">
-        <a href="/categories">departments</a>
+
+<header>
+    <h1>My Website</h1>
+    <div class="header-buttons">
+        <a href="/categories">Categories</a>
         <a href="/login">login</a>
         <a href="/logout">logout</a>
         <a href="/register">register</a>
         <a href="/profile">profile</a>
+    </div>
+</header>
+
+
+<div class="grid">
+    <div class="category">
+        <img src="https://via.placeholder.com/150" alt="Category">
+        <p>Category 1</p>
+    </div>
+    <div class="category">
+        <img src="https://via.placeholder.com/150" alt="Category 2">
+        <p>Category 2</p>
+    </div>
+    <div class="category">
+        <img src="https://via.placeholder.com/150" alt="Category 3">
+        <p>Category 3</p>
+    </div>
+    <div class="category">
+        <img src="https://via.placeholder.com/150" alt="Category 4">
+        <p>Category 4</p>
+    </div>
+    <div class="category">
+        <img src="https://via.placeholder.com/150" alt="Category 5">
+        <p>Category 5</p>
+    </div>
+    <div class="category">
+        <img src="https://via.placeholder.com/150" alt="Category 6">
+        <p>Category 6</p>
     </div>
 </div>
 </body>

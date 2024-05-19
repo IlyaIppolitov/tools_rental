@@ -1,7 +1,7 @@
 package com.itexclusive.toolsrental.controllers;
 
 import com.itexclusive.toolsrental.dao.user.UserService;
-import com.itexclusive.toolsrental.security.entity.User;
+import com.itexclusive.toolsrental.model.entities.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

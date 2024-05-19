@@ -1,4 +1,4 @@
-package com.itexclusive.toolsrental.security.dao;
+package com.itexclusive.toolsrental.model.repositories;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;

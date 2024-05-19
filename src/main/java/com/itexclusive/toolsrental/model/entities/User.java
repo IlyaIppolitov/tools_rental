@@ -1,4 +1,4 @@
-package com.itexclusive.toolsrental.security.entity;
+package com.itexclusive.toolsrental.model.entities;
 
 
 import jakarta.persistence.*;
@@ -12,6 +12,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Set;
 
 
 @Data
@@ -31,6 +32,8 @@ public class User implements UserDetails {
     @Enumerated(value = EnumType.STRING)
     @Column(name = "role")
     private Role role;
+    @ManyToMany(mappedBy = "userList",fetch = FetchType.EAGER)
+    private Set<Item> rentItemList;
 
     public User(String username, String password) {
         this.username = username;

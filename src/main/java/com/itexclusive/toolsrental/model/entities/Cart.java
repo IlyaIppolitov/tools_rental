@@ -2,11 +2,15 @@ package com.itexclusive.toolsrental.model.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Set;
 
 
-@Data
+
+@Setter
+@Getter
 @Entity
 @Table(name = "cart_t")
 public class Cart {

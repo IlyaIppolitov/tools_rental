@@ -1,4 +1,8 @@
 spring:
+  thymeleaf:
+    cache: false  # Disable Thymeleaf template caching for development
+  main:
+    allow-bean-definition-overriding: true
   application:
     name: ToolsRental
   datasource:

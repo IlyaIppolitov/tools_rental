@@ -2,10 +2,14 @@ package com.itexclusive.toolsrental.model.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Set;
 
-@Data
+
+@Setter
+@Getter
 @Entity
 @Table(name = "item_t")
 public class Item {
@@ -17,7 +21,7 @@ public class Item {
     @Column(name = "amount")
     private Integer amount;
     @Column(name = "price")
-    private Integer price;
+    private Double price;
     @ManyToOne
     @JoinColumn(name = "brand_id", nullable = false)
     private Brand brand;

@@ -1,13 +1,14 @@
 package com.itexclusive.toolsrental.model.entities;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
 import java.util.Set;
 
-@Data
 @Entity
 @Table(name = "brand_t")
+@Setter
+@Getter
 public class Brand {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
